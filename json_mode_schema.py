@@ -15,15 +15,18 @@ schema = {
             "email": {"type": "string"}
           }
         },
-        "items": {"type": "array", "items": {
-          "type": "object",
-          "properties": {
-            "sku": {"type": "string"},
-            "name": {"type": "string"},
-            "qty": {"type": "integer"},
-            "price": {"type": "number"}
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sku": {"type": "string"},
+              "name": {"type": "string"},
+              "qty": {"type": "integer"},
+              "price": {"type": "number"}
+            }
           }
-        }},
+        },
         "total": {"type": "number"},
         "currency": {"type": "string"}
     },
@@ -31,7 +34,7 @@ schema = {
     "additionalProperties": False
   },
 
-  "strict": true
+  "strict": True
 }
 
 messages = [
