@@ -7,6 +7,7 @@ schema = {
   "schema": {
     "type": "object",
     "properties": {
+        # TODO: define order_id, customer (object), items (array of objects), total (number), currency (string)
         "order_id": {"type": "string"},
         "customer": {
           "type": "object",
