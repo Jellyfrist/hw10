@@ -7,18 +7,30 @@ schema = {
   "schema": {
     "type": "object",
     "properties": {
-        "order_id": "A-1029",
-        "customer": { "name": "Sarah Johnson", "email": "sj@example.com" },
-        "items": [
-            { "sku": "WB-500", "name": "Water Bottle", "qty": 2, "price": 12.50 },
-            { "sku": "CP-010", "name": "Carrying Pouch", "qty": 1, "price": 5.00 }
-        ],
-        "total": 30.00,
-        "currency": "USD"
+        "order_id": {"type": "string"},
+        "customer": {
+          "type": "object",
+          "properties": {
+            "name": {"type": "string"},
+            "email": {"type": "string"}
+          }
+        },
+        "items": {"type": "array", "items": {
+          "type": "object",
+          "properties": {
+            "sku": {"type": "string"},
+            "name": {"type": "string"},
+            "qty": {"type": "integer"},
+            "price": {"type": "number"}
+          }
+        }},
+        "total": {"type": "number"},
+        "currency": {"type": "string"}
     },
-    "required": [ /* TODO */ ],
-    "additionalProperties": false
+    "required": ["order_id","customer","items","total","currency"],
+    "additionalProperties": False
   },
+
   "strict": true
 }
 
