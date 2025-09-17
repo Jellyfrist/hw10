@@ -15,6 +15,7 @@ message: [
 ![expected JSON](screenshots/JSON_Schema.png)
 
 
+
 ## Task 3 - Currency Mini-Agent
 - File: `tc_complete_currency.py`
 - Description: A class-based LiteLLM tool calling agent for currency conversions.
