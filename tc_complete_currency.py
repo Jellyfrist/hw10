@@ -73,7 +73,7 @@ class CurrencyTools:
             "rate": rate,
             "converted": converted
         }
-        print(result)
+        print("final JSON summary:", result)
         return result
 
     @classmethod
@@ -159,3 +159,6 @@ if __name__ == "__main__":
     # After you implement convert() + its schema, these should work nicely:
     ex.run("Convert 100 USD to THB")
     ex.run("Convert 250 baht to euros")
+    ex.run("Convert 55 dollars to EUR")
+    ex.run("Convert 10 JPY to dollars")
+    ex.run("Convert 50 ABC to THB") # error case
