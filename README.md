@@ -12,7 +12,7 @@ message: [
   {"role":"system","content":"Return ONLY a JSON object matching the schema."},
   {"role":"user","content":"Order A-1029 by Sarah Johnson (email: sj@example.com): 2x Water Bottle ($12.50 each), 1x Carrying Pouch ($5). Total $30."}
 ]
-![expected JSON] (screenshot_JSON_Schema.png)
+![expected JSON](screenshot_JSON_Schema.png)
 
 
 ## Task 3 - Currency Mini-Agent
