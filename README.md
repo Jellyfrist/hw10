@@ -7,7 +7,7 @@ This repository contains my solutions for Tasks 1 and 3.
 - Description: Extracts order info into a JSON schema from raw text input.
 - Screenshot of parsed output.
 
-### Screenshots Task 1
+### Screenshot Task 1
 message: [
   {"role":"system","content":"Return ONLY a JSON object matching the schema."},
   {"role":"user","content":"Order A-1029 by Sarah Johnson (email: sj@example.com): 2x Water Bottle ($12.50 each), 1x Carrying Pouch ($5). Total $30."}
